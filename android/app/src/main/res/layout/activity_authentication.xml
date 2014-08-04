@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_blue">
+
+    <LinearLayout
+        android:id="@+id/bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/off_white"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="15dp">
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/username"
+                android:capitalize="characters"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_sign_in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="50"
+                android:text="@string/sign_in"
+                android:textColor="@color/white"
+                android:background="@drawable/button" />
+
+            <Button
+                android:id="@+id/btn_sign_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="50"
+                android:text="@string/sign_up"
+                android:textColor="@color/white"
+                android:background="@drawable/button" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_container">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:padding="10dip"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sign_in_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/error_sign_in"
+        android:background="@color/red"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:layout_above="@id/bottom_container"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SUP?</string>
+
+    <!-- Menu -->
+    <string name="add_user">ADD USER</string>
+
+    <!-- Sign up/in Activity -->
+    <string name="sign_up">SIGN UP</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="sign_out">SIGN OUT</string>
+    <string name="username">USERNAME</string>
+    <string name="password">PASSWORD</string>
+    <string name="error_username">A USERNAME IS REQUIRED!</string>
+    <string name="error_username_taken">USERNAME IS ALREADY TAKEN!</string>
+    <string name="error_password">A PASSWORD IS REQUIRED!</string>
+    <string name="error_sign_in">MAKE SURE YOUR USERNAME AND PASSWORD ARE CORRECT.</string>
+    <string name="error_oops">Oops, try again.</string>
+    <string name="error_does_not_exist">Friend does not exist, they may be imaginary.</string>
+
+    <!-- ViewPager -->
+    <string-array name="viewpager">
+        <item>SUP?</item>
+        <item>NOT MUCH.</item>
+        <item>COOL.</item>
+        <item>:-)</item>
+    </string-array>
+
+</resources>
