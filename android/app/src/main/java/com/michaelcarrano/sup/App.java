@@ -29,7 +29,7 @@ public class App extends Application {
         Parse.initialize(this, PARSE_APP_ID, PARSE_CLIENT_KEY);
 
         // Specify an Activity to handle all pushes by default.
-        PushService.setDefaultPushCallback(this, MainActivity.class);
+        // PushService.setDefaultPushCallback(this, MainActivity.class);
     }
 
 }
